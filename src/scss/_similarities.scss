@@ -1,0 +1,70 @@
+.dfalc {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-items:not(:last-child) {
+    margin-right: 32px;
+}
+
+.nav-link {
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--dgrey);
+}
+
+.link--button {
+    min-width: 180px;
+    max-width: 240px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--white);
+    padding: 14px 37px;
+    background: var(--yellow);
+    border: 3px solid transparent;
+}
+
+.link--button:hover {
+    color: var(--yellow);
+    background-color: transparent;
+    border: 3px solid var(--yellow);
+    transition: all 0.4s ease;
+}
+
+.burger--button {
+    outline: none;
+    border: none;
+    background-color: unset;
+    width: 20px;
+    height: 16px;
+    display: none;
+}
+
+.heading-color--similarities {
+    color: var(--dnavy);
+}
+
+.text--similarities {
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--dgrey);
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .hero {
+        background-image: url(./../assets/hero_background@2x.jpg);
+    }
+}
